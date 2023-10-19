@@ -9,9 +9,11 @@ const ingredients = [
 
 const elementUl = document.querySelector("#ingredients")
 
-ingredients.map(ingredient => {
+const viewingIngredients = ingredients.map(ingredient => {
 	const elementLi = document.createElement("li");
 	elementLi.classList.add("item")
 	elementLi.textContent = ingredient;
-	elementUl.append(elementLi);
+	return elementLi;
 })
+elementUl.append(...viewingIngredients);
+

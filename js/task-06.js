@@ -6,11 +6,9 @@ const checkEnteredCharacters = (event) => {
 	if (curentValueLength === inputDataValue) {
 		input.classList.add('valid');
 		input.classList.remove('invalid');
-	} else if (curentValueLength !== inputDataValue && curentValueLength !== 0) {
+	} else {
 		input.classList.remove('valid');
 		input.classList.add('invalid');
-	} else if (curentValueLength === 0) {
-		input.classList.remove('invalid');
 	}
 }
 

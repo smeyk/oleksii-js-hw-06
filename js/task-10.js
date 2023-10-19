@@ -19,13 +19,16 @@ const createBoxes = (amount) => {
 		divElement.style.backgroundColor = getRandomHexColor();
 		divBox.append(divElement);
 	}
+
 }
 
 const checkEnteredValue = () => {
 	const enteredNum = input.value;
 	if (enteredNum > 0) {
+		divBox.innerHTML = "";
 		createBoxes(enteredNum);
 	}
+	console.log()
 }
 
 const destroyBoxes = () => {

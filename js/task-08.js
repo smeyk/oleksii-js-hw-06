@@ -8,7 +8,7 @@ const sentForm = (event) => {
 	const emailInputValue = form.elements.email.value;
 	const passwordInputValue = form.elements.password.value;
 
-	const userData = new Object();
+	const userData = {};
 	userData.email = emailInputValue;
 	userData.password = passwordInputValue;
 
